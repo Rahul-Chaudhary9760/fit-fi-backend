@@ -6,7 +6,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://fit-fi-front-mjg1-pa6qzzt06-rahul-chaudharys-projects-4df784a8.vercel.app/",
+      "https://fit-fi-front-mjg1-pa6qzzt06-rahul-chaudharys-projects-4df784a8.vercel.app",
     ],
     credentials: true,
   })
