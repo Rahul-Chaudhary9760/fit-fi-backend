@@ -26,3 +26,12 @@ export async function login(req: Request, res: Response) {
     return sendError(res, error.message || "Login failed", 401);
   }
 }
+
+export const me = async (req: Request, res: Response) => {
+  return sendSuccess(res, (req as any).user, "User fetchec");
+};
+
+export const logoutUser = async (req: Request, res: Response) => {
+  res.clearCookie("accessToken");
+  return sendSuccess(res, null, "Logged out successfully");
+};
